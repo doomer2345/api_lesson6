@@ -93,6 +93,7 @@ def check_response(response_content):
     if response_content.get("error"):
         raise requests.exceptions.HTTPError
 
+
 if __name__ == '__main__':
     load_dotenv()
     comment = get_random_comic()
